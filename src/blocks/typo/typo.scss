@@ -34,14 +34,29 @@ $border-radius:               3px !default;
 
 
 
-// @font-face {
-//   font-family: 'FONTNAME';
-//   src: url('../fonts/FONTNAME.woff2') format('woff2'),
-//        url('../fonts/FONTNAME.woff') format('woff'),
-//        url('../fonts/FONTNAME.ttf')  format('truetype');
-//   font-weight: 400;
-//   font-style: normal;
-// }
+/* noto-sans-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Noto Sans'),
+    local('NotoSans'),
+    url('../fonts/noto-sans-v7-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/noto-sans-v7-cyrillic_latin-regular.woff') format('woff');
+}
+
+/* noto-sans-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Noto Sans Bold'),
+    local('NotoSans-Bold'),
+    url('../fonts/noto-sans-v7-cyrillic_latin-700.woff2') format('woff2'),
+    url('../fonts/noto-sans-v7-cyrillic_latin-700.woff') format('woff');
+}
 
 
 

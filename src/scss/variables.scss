@@ -1,18 +1,19 @@
 // Базовые цвета https://colorscheme.ru/color-converter.html
 
 $black:                       hsl(0, 0%, 0%);
-$gray-darkest:                hsl(0, 0%, 10%);
-$gray-darker:                 hsl(0, 0%, 20%);
+$gray-darkest:                #31353f;
+$gray-darker:                 #434956;
 $gray-darken:                 hsl(0, 0%, 30%);
 $gray-dark:                   hsl(0, 0%, 40%);
 $gray:                        hsl(0, 0%, 50%);
-$gray-light:                  hsl(0, 0%, 60%);
-$gray-lighten:                hsl(0, 0%, 70%);
-$gray-lighter:                hsl(0, 0%, 80%);
-$gray-lightest:               hsl(0, 0%, 90%);
+$gray-light:                  #b0b1b4; // соц. ссылки в подвале
+$gray-lighten:                #d2d9e8; // гор. разделитель под заголовком
+$gray-lighter:                #e3e7ec; // бордюр
+$gray-lightest:               #f3f5f9;
 $white:                       hsl(0, 0%, 100%);
 
-$color-main:                  hsl(208, 98%, 43%);
+$color-main:                  #477afb;
+$color-main--dark:            #3f70fa;
 $color-success:               hsl(120, 39%, 54%);
 $color-danger:                hsl(2, 64%, 58%);
 $color-warning:               hsl(35, 84%, 62%);
@@ -22,7 +23,7 @@ $color-warning:               hsl(35, 84%, 62%);
 // Семантические цвета
 
 $text-color:                  $gray-darkest;
-$text-color--muted:           $gray;
+$text-color--muted:           $gray-darker;
 $body-bg:                     $white;
 
 $link-color:                  $color-main;
@@ -38,19 +39,19 @@ $font-size--root:             16px;
 
 $font-size:                   1rem; // rem(16px)
 
-$font-size--h1:               rem(40px);
-$font-size--h2:               rem(32px);
+$font-size--h1:               rem(32px);
+$font-size--h2:               rem(28px);
 $font-size--h3:               rem(24px);
-$font-size--h4:               rem(18px);
-$font-size--h5:               rem(16px);
+$font-size--h4:               rem(22px);
+$font-size--h5:               rem(18px);
 $font-size--h6:               rem(16px);
 
 $font-size--small:            80%;
 
 $line-height:                 1.5;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-$font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
+$font-family:                 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+$font-family--serif:          $font-family;
 $font-family--monospace:      SFMono-Regular, 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 $font-family--headings:       $font-family;
 
