@@ -14,13 +14,16 @@
     content: '';
     flex-grow: 1;
     height: 1px;
-    background-color: $gray-light;
+    background-color: $gray-lighten;
   }
 
   &__inner {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-size: $font-size--small;
-    color: $gray-light;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: $font-size--h2;
+
+    @media (min-width: $screen-xl) {
+      font-size: $font-size--h2 + 14;
+    }
   }
 }
