@@ -7,18 +7,11 @@ block meta
 //- block append head
 //-   link(rel='stylesheet', href='css/some.css')
 
-block header
-  +page-header()
-    +logo('/')
-      span Логотип
-    +main-nav('10')
-
 block content
-  p Содержимое.
-
-block footer
-  +page-footer()
-    p «Подвал»
+  +about()
+  +list-property()
+  +join()
+  +help-friend()
 
 //- block page-bottom
 //-   script(src="js/some.js")

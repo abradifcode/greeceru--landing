@@ -20,9 +20,14 @@
     "field-select": [
       "--error"
     ],
-    "field-actions": [],
     "form": [],
-    "modal": []
+    "modal": [],
+    "trusted": [],
+    "about": [],
+    "list-property": [],
+    "join": [],
+    "help-friend": [],
+    "social-links": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",

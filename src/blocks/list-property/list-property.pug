@@ -1,0 +1,33 @@
+//- Все примеси в этом файле должны начинаться c имени блока (list-property)
+
+mixin list-property(mods)
+
+  //- Принимает:
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +list-property('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' list-property--' + modsList[i].trim();
+      }
+    }
+
+  .list-property(class=allMods, id="list-property")&attributes(attributes)
+    header.list-property__header
+      h2.list-property__title List your property FOR FREE
+        small in 3 easy steps
+      .list-property__content
+        .list-property__block
+          h3.list-property__subtitle.list-property__subtitle--describe Describe
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.
+        .list-property__block
+          h3.list-property__subtitle.list-property__subtitle--upload Upload photos
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.
+        .list-property__block
+          h3.list-property__subtitle.list-property__subtitle--locate Locate
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.

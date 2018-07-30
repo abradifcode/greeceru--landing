@@ -1,0 +1,23 @@
+//- Все примеси в этом файле должны начинаться c имени блока (about)
+
+mixin about(mods)
+
+  //- Принимает:
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +about('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' about--' + modsList[i].trim();
+      }
+    }
+
+  .about(class=allMods)&attributes(attributes)
+    h2.about__title About our service
+    +embed-responsive()(class=".about__video")
+      iframe(src='https://www.youtube.com/embed/2T7Wx1cUDoU', frameborder='0', allowfullscreen='')

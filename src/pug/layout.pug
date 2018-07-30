@@ -29,12 +29,27 @@ html(class='no-js  page', lang='ru')
     .page__inner
       .page__content
         block header
-          p «шапка»
+          +page-header()
+            +logo()
+              span Greece.ru
+            h1.page-header__title Market your property online with Greece.Ru
+            +main-nav()
+            .page-header__info
+              ul.page-header__features
+                li.page-header__features-item
+                  a(href="#list-property") Free listing
+                li.page-header__features-item Fast approval
+                li.page-header__features-item International promotion
+                li.page-header__features-item Targeted audience
+                li.page-header__features-item
+                  a(href="#fast-deals") Fast deals
+                li.page-header__features-descr Trusted since 2002
+              +btn('Watch video')(href='#video', id="watch-video", class="page-header__watch-video")
+            +trusted()
         block content
-          p содержимое страницы
       .page__footer-wrapper
         block footer
-          p «подвал»
+          +page-footer()
 
     block page-bottom
       script(src='js/script.min.js')

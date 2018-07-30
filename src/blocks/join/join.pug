@@ -1,0 +1,89 @@
+//- Все примеси в этом файле должны начинаться c имени блока (join)
+
+mixin join(mods)
+
+  //- Принимает:
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +join('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' join--' + modsList[i].trim();
+      }
+    }
+
+  .join(class=allMods)&attributes(attributes)
+    h2.join__inner List your property FOR FREE
+    +form()
+      +field-select(
+        '',
+        {
+          name: 'type',
+          id: 'type'
+        },
+        [
+          {
+            title: 'I’m a buyer',
+            attrs: {
+              value: 'buyer',
+            }
+          },
+          {
+            title: 'I’m a seller',
+            attrs: {
+              value: 'seller',
+            }
+          },
+        ],
+        'Please specify who you are',
+        'error'
+      )
+      +field-text({
+        helpText: 'Please enter your name',
+        mods: 'error',
+        attrs: {
+          name: 'name',
+          placeholder: 'Your Name',
+        }
+      })
+      +field-text({
+        attrs: {
+          name: 'surname',
+          placeholder: 'Your Surname',
+        }
+      })
+      +field-text({
+        attrs: {
+          name: 'phone',
+          type: 'tel',
+          placeholder: 'Your Phone',
+        }
+      })
+      +field-text({
+        attrs: {
+          name: 'email',
+          type: 'email',
+          placeholder: 'Your Email',
+        }
+      })
+      +field-text({
+        attrs: {
+          name: 'password',
+          type: 'password',
+          placeholder: 'Your Password',
+        }
+      })
+      +field-checkbox([
+        {
+          title: 'I have read and agree to the <a href="">Terms and Conditions</a>',
+          attrs: {
+            name: 'terms',
+          }
+        },
+      ])
+      +btn('GET STARTED NOW', 'lg, block')

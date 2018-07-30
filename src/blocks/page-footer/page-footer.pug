@@ -19,4 +19,8 @@ mixin page-footer(mods)
 
   footer.page-footer(class=allMods, role='contentinfo')&attributes(attributes)
     .page-footer__inner
-      block
+      h2.page-footer__title Got any questions?
+        small Our FAQ and has all the answers!
+      +btn('Frequently Asked Questions')(href="url")
+      +social-links()(class="page-footer__social")
+      p.page-footer__copyright © Copyright 2017 Greece.ru #[br] Real estate agency with the best properties. Become  part of our community.
