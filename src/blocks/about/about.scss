@@ -5,4 +5,16 @@
 .about {
 
   $block-name:                &; // #{$block-name}__element
+
+  padding: 30px 25px;
+
+  &__title {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: $font-size--h1;
+  }
+
+  &__video {
+    margin: 0;
+  }
 }
