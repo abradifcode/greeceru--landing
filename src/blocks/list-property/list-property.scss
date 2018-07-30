@@ -5,4 +5,72 @@
 .list-property {
 
   $block-name:                &; // #{$block-name}__element
+
+  padding: 25px 25px 33px;
+  background-color: $gray-lightest;
+  border-top: 1px solid $gray-lighten-2;
+  border-bottom: 1px solid $gray-lighten-2;
+  text-align: center;
+
+  &__header {}
+
+  &__title {
+    display: inline-block;
+    margin: 7px 0 30px;
+    padding-bottom: 35px;
+    font-size: $font-size--h1;
+    text-align: center;
+    border-bottom: 1px solid $gray-lighten;
+
+    small {
+      display: block;
+      margin-top: 10px;
+      font-size: $font-size--h1 - 4;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+  }
+
+  &__block {
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 13px;
+    font-size: $font-size--h1;
+
+    svg {
+      display: inline-block;
+      margin-right: 20px;
+      fill: $color-main;
+    }
+
+    &--describe {
+
+      svg {
+        transform: translateY(-1px);
+      }
+    }
+
+    &--upload {
+
+      svg {
+        transform: translateY(2px);
+      }
+    }
+
+    &--locate {
+
+      svg {
+        transform: translateY(2px);
+      }
+    }
+  }
 }

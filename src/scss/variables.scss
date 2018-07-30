@@ -8,6 +8,7 @@ $gray-dark:                   hsl(0, 0%, 40%);
 $gray:                        hsl(0, 0%, 50%);
 $gray-light:                  #b0b1b4; // соц. ссылки в подвале
 $gray-lighten:                #d2d9e8; // гор. разделитель под заголовком
+$gray-lighten-2:              #dfe4f4;
 $gray-lighter:                #e3e7ec; // бордюр
 $gray-lightest:               #f3f5f9;
 $white:                       hsl(0, 0%, 100%);
@@ -15,6 +16,7 @@ $white:                       hsl(0, 0%, 100%);
 $color-main--lightest:        #EEF2FF;
 $color-main:                  #477afb;
 $color-main--dark:            #3f70fa;
+$color-main--darken:          #4263CC;
 $color-success:               hsl(120, 39%, 54%);
 $color-danger:                hsl(2, 64%, 58%);
 $color-warning:               hsl(35, 84%, 62%);
