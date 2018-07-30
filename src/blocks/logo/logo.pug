@@ -1,15 +1,12 @@
 //- Все примеси в этом файле должны начинаться c имени блока (logo)
 
-mixin logo(href, mods)
+mixin logo(mods)
 
   //- Принимает:
-  //-   href  {string} - ссылка логотипа
   //-   mods  {string} - список модификаторов
   //- Вызов:
-        +logo('/')
-          img(src='img/logo.svg', alt='Logo', width='64', height='15')
-        +logo(false, 'mod')
-          img(src='img/logo.svg', alt='Logo', width='64', height='15')
+        +logo()
+        +logo('mod')
   -
     // список модификаторов
     var allMods = '';
@@ -20,5 +17,5 @@ mixin logo(href, mods)
       }
     }
 
-  a.logo(class=allMods, href=href)&attributes(attributes)
-    block
+  span.logo(class=allMods)&attributes(attributes)
+    img(src='img/logo.png', alt='Greece.ru', width='32', height='43')
