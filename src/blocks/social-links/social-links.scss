@@ -27,6 +27,16 @@
     border-radius: 50%;
     transition: all 0.2s;
 
+    @media (min-width: $screen-sm) {
+      width: 66px;
+      height: 66px;
+
+      svg {
+        width: auto;
+        height: auto;
+      }
+    }
+
     &:hover,
     &:focus {
       border-color: #fff;

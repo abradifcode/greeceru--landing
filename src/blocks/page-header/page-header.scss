@@ -11,6 +11,10 @@
   text-align: center;
   color: #fff;
 
+  @media (min-width: $screen-sm) {
+    padding-top: 35px;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -23,9 +27,42 @@
     background-size: cover;
   }
 
+  &__inner {
+    position: relative;
+
+    @media (min-width: $screen-sm) {
+
+      .logo {
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+    }
+  }
+
+  &__info {
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 225px;
+        height: 225px;
+        background: url(../img/map--mobile.png) center no-repeat;
+      }
+    }
+  }
+
   &__title {
-    margin: 20px 0 14px;
-    font-size: $font-size--h1 - 1;
+    margin: 0;
+    padding: 20px 0 14px;
+    font-size: $font-size--h1 - 2;
+
+    @media (min-width: $screen-sm) {
+      padding-left: 55px;
+    }
   }
 
   &__features {
@@ -38,6 +75,10 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     color: $text-color;
     text-align: left;
+
+    @media (min-width: $screen-sm) {
+      margin-right: 0;
+    }
   }
 
   &__features-item {
