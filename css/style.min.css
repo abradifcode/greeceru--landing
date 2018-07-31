@@ -288,7 +288,7 @@ pre {
       position: absolute;
       top: 4px;
       left: 0;
-      fill: #4263CC; }
+      fill: #4263cc; }
 .page-header__features-item a {
       font-weight: 700;
       text-decoration: none; }
@@ -310,6 +310,26 @@ pre {
       background: #d2d9e8; }
 .page-header__watch-video.btn {
     display: none; }
+.page-footer {
+  padding: 25px 30px;
+  background: #31353f;
+  color: #fff;
+  text-align: center; }
+.page-footer__title {
+    margin: 5px 0 20px;
+    font-size: 21px; }
+.page-footer__title small {
+      display: block;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 16px; }
+.page-footer__btn {
+    display: block;
+    width: 100%; }
+.page-footer__copyright {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.7; }
 .logo {
   display: inline-block;
   white-space: nowrap; }
@@ -440,14 +460,14 @@ pre {
   line-height: 1;
   text-decoration: none;
   text-transform: none;
-  color: #EEF2FF;
+  color: #eef2ff;
   border-radius: 25px;
   border: none;
   background-color: #477afb;
   background-image: none;
   cursor: pointer;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
   -webkit-transition: color 0.2s, background 0.2s, -webkit-transform 0.1s, -webkit-box-shadow 0.1s;
   transition: color 0.2s, background 0.2s, -webkit-transform 0.1s, -webkit-box-shadow 0.1s;
   transition: color 0.2s, background 0.2s, transform 0.1s, box-shadow 0.1s;
@@ -461,8 +481,8 @@ pre {
 .btn:active, .btn:focus {
     -webkit-transform: translateY(3px);
             transform: translateY(3px);
-    -webkit-box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15);
-            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.15); }
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
 .btn--block {
     width: 100%; }
 .btn--lg {
@@ -646,9 +666,9 @@ input:checked ~ .field-checkbox__name-text:after {
 .field-checkbox__help-text:empty {
       display: none; }
 .field-checkbox__input-wrap--error .field-checkbox__help-text {
-  color: #e73c64; }
+    color: #e73c64; }
 .field-checkbox__input-wrap--error .field-checkbox__name-text:before {
-  border-color: #e73c64; }
+    border-color: #e73c64; }
 .field-select {
   display: block;
   margin-bottom: 1rem; }
@@ -872,6 +892,121 @@ input:checked ~ .field-checkbox__name-text:after {
     text-align: center; }
 .join__title a {
       text-decoration: none; }
+.help-friend {
+  padding: 30px 25px;
+  border-top: 1px solid #dfe4f4;
+  border-bottom: 1px solid #dfe4f4;
+  background: #f3f5f9;
+  text-align: center; }
+.help-friend__title {
+    margin: 0 0 20px;
+    font-size: 21px; }
+.help-friend__title small {
+      display: block;
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: 400; }
+.help-friend__send {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px; }
+.help-friend__send-link {
+    position: relative;
+    width: 160px;
+    padding: 0 5px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding-top: 90px;
+    text-decoration: none;
+    font-size: 16px; }
+.help-friend__send-link:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #fff;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
+.help-friend__send-link svg {
+      position: absolute;
+      top: 19px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      fill: #3f70fa; }
+.help-friend__send-link--msg:before {
+      background: #3f70fa; }
+.help-friend__send-link--msg svg {
+      fill: #fff; }
+.help-friend__or {
+    max-width: 260px;
+    margin: auto; }
+.help-friend__subtitle {
+    margin: 12px 0 28px;
+    font-size: 21px; }
+.help-friend__my-links {
+    margin: 0; }
+.help-friend__my-links .btn {
+      display: block; }
+.help-friend__my-links .btn:not(:last-child) {
+        margin-bottom: 14px; }
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 24px 0 15px;
+  border-top: 1px solid #20232B;
+  padding: 21px 0 0;
+  list-style: none; }
+.social-links__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 66px;
+    height: 66px;
+    margin-bottom: 20px;
+    border: 2px solid #C2C3C6;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+.social-links__link:hover, .social-links__link:focus {
+      border-color: #fff; }
+.social-links__link:hover svg, .social-links__link:focus svg {
+        fill: #fff; }
+.social-links__link svg {
+      fill: #C2C3C6;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+.social-links__text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0; }
+.social-links__tw-icon {
+    -webkit-transform: translate(2px, 1px);
+            transform: translate(2px, 1px); }
 .custom-select-wrapper {
   position: relative;
   z-index: 1;
@@ -929,8 +1064,8 @@ input:checked ~ .field-checkbox__name-text:after {
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   background: #fff;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

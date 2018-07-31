@@ -95,7 +95,7 @@
         </div>
       </div>
       <div class="join">
-        <h2 class="join__title"><a href="url">List your property FOR FREE</a></h2>
+        <h2 class="join__title"></h2><a href="url">List your property FOR FREE</a>
         <form class="form">
           <div class="field-select custom-select" placeholder="I’m a buyer"><span class="field-select__help-text">Please specify who you are</span><select class="field-select__select" name="type" id="type"><option value="buyer" checked="checked">I’m a buyer</option><option value="seller">I’m a seller</option></select></div>
           <label class="field-text  field-text--error"><span class="field-text__help-text">Please enter your name</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" name="name" placeholder="Your Name" required="required"/></span></label>
@@ -105,7 +105,7 @@
           <label class="field-text"><span class="field-text__input-wrap"><input class="field-text__input" type="password" name="password" placeholder="Your Password" required="required"/></span></label>
           <div class="field-checkbox">
             <div class="field-checkbox__input-wrap  field-checkbox__input-wrap--error">
-              <label class="field-checkbox__name"><input class="field-checkbox__input" type="checkbox" name="terms" /><span class="field-checkbox__name-text">I have read and agree to the <a href='url'>Terms and Conditions</a></span></label>
+              <label class="field-checkbox__name"><input class="field-checkbox__input" type="checkbox" name="terms" required="required" /><span class="field-checkbox__name-text">I have read and agree to the <a href='url'>Terms and Conditions</a></span></label>
               <div class="field-checkbox__help-text-wrap">
                 <div class="field-checkbox__help-text">You have to agree to our Terms and Conditions</div>
               </div>
@@ -116,10 +116,17 @@
       </div>
       <div class="help-friend">
         <h2 class="help-friend__title">Do you have a friend who is selling or renting out his property?<small>Help him by recommending our service</small></h2>
-        <ul class="help-friend__send">
-          <li class="help-friend__send-item"><a class="help-friend__send-link" href="url"><span>Send in messenger</span></a><a class="help-friend__send-link" href="url"><span>Send in mail</span></a></li>
-        </ul>
-        <div class="or">
+        <div class="help-friend__send">
+          <a class="help-friend__send-link help-friend__send-link--msg" href="url">
+            <svg width="36" height="36">
+              <use xlink:href="img/sprite-svg.svg#messenger"></use>
+            </svg><span>Send in messenger</span></a>
+          <a class="help-friend__send-link" href="url">
+            <svg width="36" height="36">
+              <use xlink:href="img/sprite-svg.svg#mail"></use>
+            </svg><span>Send in mail</span></a>
+        </div>
+        <div class="or help-friend__or">
           <div class="or__inner">or</div>
         </div>
         <h3 class="help-friend__subtitle">Browse our properties</h3>
@@ -129,9 +136,32 @@
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner">
-          <h2 class="page-footer__title">Got any questions?<small>Our FAQ and has all the answers!</small></h2><a class="btn" href="url">Frequently Asked Questions</a>
+          <h2 class="page-footer__title">Got any questions?<small>Our FAQ and has all the answers!</small></h2><a class="btn page-footer__btn" href="url">Frequently Asked Questions</a>
           <ul class="social-links page-footer__social">
-            <li class="social-links__item"><a href="">link</a></li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="url">
+                <svg width="36" height="36">
+                  <use xlink:href="img/sprite-svg.svg#facebook"></use>
+                </svg><span class="social-links__text">Facebook</span></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="url">
+                <svg class="social-links__tw-icon" width="32" height="32">
+                  <use xlink:href="img/sprite-svg.svg#twitter"></use>
+                </svg><span class="social-links__text">Twitter</span></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="url">
+                <svg width="34" height="34">
+                  <use xlink:href="img/sprite-svg.svg#instagram"></use>
+                </svg><span class="social-links__text">Instagram</span></a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-links__link" href="url">
+                <svg width="34" height="34">
+                  <use xlink:href="img/sprite-svg.svg#google-plus"></use>
+                </svg><span class="social-links__text">Google plus</span></a>
+            </li>
           </ul>
           <p class="page-footer__copyright">© Copyright 2017 Greece.ru <br/> Real estate agency with the best properties. Become part of our community.</p>
         </div>
