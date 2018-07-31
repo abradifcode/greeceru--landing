@@ -18,19 +18,21 @@ mixin join(mods)
     }
 
   .join(class=allMods)&attributes(attributes)
-    h2.join__inner List your property FOR FREE
+    h2.join__title
+    a(href='url') List your property FOR FREE
     +form()
       +field-select(
         '',
         {
           name: 'type',
-          id: 'type'
+          id: 'type',
         },
         [
           {
             title: 'I’m a buyer',
             attrs: {
               value: 'buyer',
+              checked: true,
             }
           },
           {
@@ -40,21 +42,22 @@ mixin join(mods)
             }
           },
         ],
-        'Please specify who you are',
-        'error'
-      )
+        'Please specify who you are'
+      )(class='custom-select', placeholder="I’m a buyer")
       +field-text({
         helpText: 'Please enter your name',
         mods: 'error',
         attrs: {
           name: 'name',
           placeholder: 'Your Name',
+          required: true
         }
       })
       +field-text({
         attrs: {
           name: 'surname',
           placeholder: 'Your Surname',
+          required: true
         }
       })
       +field-text({
@@ -62,13 +65,15 @@ mixin join(mods)
           name: 'phone',
           type: 'tel',
           placeholder: 'Your Phone',
+          required: true
         }
       })
       +field-text({
         attrs: {
           name: 'email',
-          type: 'email',
+          type: 'text',
           placeholder: 'Your Email',
+          required: true
         }
       })
       +field-text({
@@ -76,11 +81,14 @@ mixin join(mods)
           name: 'password',
           type: 'password',
           placeholder: 'Your Password',
+          required: true
         }
       })
       +field-checkbox([
         {
           title: 'I have read and agree to the <a href=\'url\'>Terms and Conditions</a>',
+          helpText: 'You have to agree to our Terms and Conditions',
+          mods: 'error',
           attrs: {
             name: 'terms',
           }

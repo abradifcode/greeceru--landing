@@ -13,12 +13,12 @@ $gray-lighter:                #e3e7ec; // бордюр
 $gray-lightest:               #f3f5f9;
 $white:                       hsl(0, 0%, 100%);
 
-$color-main--lightest:        #EEF2FF;
+$color-main--lightest:        #eef2ff;
 $color-main:                  #477afb;
 $color-main--dark:            #3f70fa;
-$color-main--darken:          #4263CC;
+$color-main--darken:          #4263cc;
 $color-success:               hsl(120, 39%, 54%);
-$color-danger:                hsl(2, 64%, 58%);
+$color-danger:                #e73c64;
 $color-warning:               hsl(35, 84%, 62%);
 
 
@@ -86,10 +86,10 @@ $grid-gutter-width:           rem(30px);
 
 // Разное
 
-$field-padding-vertical:      0.3em;
-$field-padding-horizontal:    0.7em;
+$field-padding-vertical:      16px;
+$field-padding-horizontal:    15px;
 
-$border-radius:               rem(3px);
+$border-radius:               2px;
 $opacity:                     0.7;
 $transition-time:             0.3s;
 $shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);

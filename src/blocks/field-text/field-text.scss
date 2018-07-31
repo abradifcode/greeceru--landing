@@ -2,28 +2,13 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-$gray-lighter:                hsl(0, 0%, 80%) !default;
-$border-color:                hsl(0, 0%, 60%) !default;
-
-$text-color--muted:           hsl(0, 0%, 50%) !default;
-
-$line-height:                 1.5 !default;
-
-$field-padding-vertical:      0.3em !default;
-$field-padding-horizontal:    0.7em !default;
-
-$border-radius:               rem(3px) !default;
-
 .field-text {
 
   $block-name:                &; // #{$block-name}__element
 
+  position: relative;
   display: block;
-  margin-bottom: 1rem;
-
-  &__name {
-    @include field-name;
-  }
+  padding-top: 32px;
 
   &__input-wrap {
     display: block;
@@ -34,18 +19,25 @@ $border-radius:               rem(3px) !default;
     vertical-align: middle;
     width: 100%;
     // height: 2.125em;
-    padding: $field-padding-vertical  $field-padding-horizontal;
+    padding: $field-padding-vertical $field-padding-horizontal;
     margin: 0;
     line-height: $line-height;
     font-size: 1em;
     font-family: inherit;
-    background-color: #fff;
+    background-color: $gray-lightest;
     border: 1px solid $border-color;
     border-radius: $border-radius;
     appearance: textfield;
+    transition: all 0.2s;
+
+    &:valid {
+      background-color: #fff;
+    }
 
     &:focus {
-      @include field-focus;
+      outline: 0;
+      background-color: #fff;
+      border-color: $link-color;
     }
 
     &[disabled],
@@ -85,5 +77,12 @@ $border-radius:               rem(3px) !default;
 
   &__help-text {
     @include field-help-text;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

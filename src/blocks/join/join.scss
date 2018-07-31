@@ -5,4 +5,16 @@
 .join {
 
   $block-name:                &; // #{$block-name}__element
+
+  padding: 25px 25px 30px;
+
+  &__title {
+    margin: 6px 0 36px;
+    color: $link-color;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }

@@ -14,9 +14,7 @@
     "field-text": [
       "--error"
     ],
-    "field-checkbox": [
-      "__input-wrap--error"
-    ],
+    "field-checkbox": [],
     "field-select": [
       "--error"
     ],
@@ -27,7 +25,8 @@
     "list-property": [],
     "join": [],
     "help-friend": [],
-    "social-links": []
+    "social-links": [],
+    "custom-select": []
   },
   "addCssBefore": [
     "./src/scss/functions.scss",
