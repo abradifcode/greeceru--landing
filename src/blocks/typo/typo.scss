@@ -62,11 +62,6 @@ $border-radius:               3px !default;
 
 html {
   font-size: $font-size--root;
-
-  // Для адаптивной типографики, менять font-size на html
-  // @media (min-width: $screen-md) {
-  //   font-size: ($font-size--root + 2);
-  // }
 }
 
 body {
@@ -184,22 +179,6 @@ ul ol {
 
 li {
   line-height: inherit;
-}
-
-dt {
-  font-weight: 700;
-}
-
-dd {
-  margin-left: 0;
-
-  @media (min-width: $screen-sm) {
-    margin-left: 1.5rem;
-  }
-
-  & + dt {
-    margin-top: ($line-height / 2);
-  }
 }
 
 hr {

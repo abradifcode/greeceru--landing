@@ -12,6 +12,8 @@
   margin: 0;
   padding: 16px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   user-select: none;
   text-align: center;
   font-size: $font-size--h2;
