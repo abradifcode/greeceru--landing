@@ -5,4 +5,93 @@
 .help-friend {
 
   $block-name:                &; // #{$block-name}__element
+
+  padding: 30px 25px;
+  border-top: 1px solid $gray-lighten-2;
+  border-bottom: 1px solid $gray-lighten-2;
+  background: $gray-lightest;
+  text-align: center;
+
+  &__title {
+    margin: 0 0 20px;
+    font-size: $font-size--h1;
+
+    small {
+      display: block;
+      padding-top: 10px;
+      font-size: $font-size--h2;
+      font-weight: 400;
+    }
+  }
+
+  &__send {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  &__send-link {
+    position: relative;
+    width: 160px;
+    padding: 0 5px;
+    flex-shrink: 0;
+    padding-top: 90px;
+    text-decoration: none;
+    font-size: $font-size--h3;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: #fff;
+      transform: translateX(-50%);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    svg {
+      position: absolute;
+      top: 19px;
+      left: 50%;
+      transform: translateX(-50%);
+      fill: $color-main--dark;
+    }
+
+    &--msg {
+
+      &:before {
+        background: $color-main--dark;
+      }
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__or {
+    max-width: 260px;
+    margin: auto;
+  }
+
+  &__subtitle {
+    margin: 12px 0 28px;
+    font-size: $font-size--h1;
+  }
+
+  &__my-links {
+    margin: 0;
+
+    .btn {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
 }

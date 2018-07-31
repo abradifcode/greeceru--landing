@@ -86,4 +86,17 @@ $border-radius:               rem(3px) !default;
   &__help-text {
     @include field-help-text;
   }
+
+
+
+  &__input-wrap--error {
+
+    #{$block-name}__help-text {
+      color: $color-danger;
+    }
+
+    #{$block-name}__name-text:before {
+      border-color: $color-danger;
+    }
+  }
 }

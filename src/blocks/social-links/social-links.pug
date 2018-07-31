@@ -19,4 +19,22 @@ mixin social-links(mods)
 
   ul.social-links(class=allMods)&attributes(attributes)
     li.social-links__item
-      a(href='') link
+      a.social-links__link(href='url')
+        svg(width='36', height='36')
+          use(xlink:href='img/sprite-svg.svg#facebook')
+        span.social-links__text Facebook
+    li.social-links__item
+      a.social-links__link(href='url')
+        svg.social-links__tw-icon(width='32', height='32')
+          use(xlink:href='img/sprite-svg.svg#twitter')
+        span.social-links__text Twitter
+    li.social-links__item
+      a.social-links__link(href='url')
+        svg(width='34', height='34')
+          use(xlink:href='img/sprite-svg.svg#instagram')
+        span.social-links__text Instagram
+    li.social-links__item
+      a.social-links__link(href='url')
+        svg(width='34', height='34')
+          use(xlink:href='img/sprite-svg.svg#google-plus')
+        span.social-links__text Google plus
