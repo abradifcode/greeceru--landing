@@ -258,7 +258,7 @@ pre {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #64779A url(../img/page-header-bg--mobile.jpg) left center no-repeat;
+    background: #64779a url(../img/page-header-bg--mobile.jpg) left center no-repeat;
     background-size: cover; }
 .page-header__inner {
     position: relative; }
@@ -702,11 +702,12 @@ input:checked ~ .field-checkbox__name-text:after {
     background: none;
     font-size: 16px;
     font-weight: 700;
+    line-height: 1;
     cursor: pointer; }
 .trusted__more:before {
       content: '';
       position: absolute;
-      top: 7px;
+      top: 6px;
       right: 10px;
       width: 9px;
       height: 9px;
@@ -760,6 +761,9 @@ input:checked ~ .field-checkbox__name-text:after {
   border-top: 1px solid #dfe4f4;
   border-bottom: 1px solid #dfe4f4;
   text-align: center; }
+.list-property__content {
+    max-width: 600px;
+    margin: auto; }
 .list-property__title {
     display: inline-block;
     margin: 7px 0 30px;
@@ -881,7 +885,7 @@ input:checked ~ .field-checkbox__name-text:after {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 24px 0 15px;
-  border-top: 1px solid #20232B;
+  border-top: 1px solid #20232b;
   padding: 21px 0 0;
   list-style: none; }
 .social-links__link {
@@ -897,7 +901,7 @@ input:checked ~ .field-checkbox__name-text:after {
     width: 50px;
     height: 50px;
     margin-bottom: 20px;
-    border: 2px solid #C2C3C6;
+    border: 2px solid #c2c3c6;
     border-radius: 50%;
     -webkit-transition: all 0.2s;
     transition: all 0.2s; }
@@ -908,7 +912,7 @@ input:checked ~ .field-checkbox__name-text:after {
 .social-links__link svg {
       width: 24px;
       height: 24px;
-      fill: #C2C3C6;
+      fill: #c2c3c6;
       -webkit-transition: all 0.2s;
       transition: all 0.2s; }
 .social-links__text {
@@ -1045,10 +1049,10 @@ input:checked ~ .field-checkbox__name-text:after {
         width: 225px;
         height: 225px;
         background: url(../img/map--mobile.png) center no-repeat; }
+    .page-header__info-text {
+      margin-left: auto; }
       .page-header__title {
         padding-left: 55px; }
-      .page-header__features {
-        margin-right: 0; }
     .main-nav {
       padding-left: 55px;
       margin-bottom: 45px; }
@@ -1061,7 +1065,21 @@ input:checked ~ .field-checkbox__name-text:after {
 @media (min-width: 768px) {
     .page-footer__inner {
       width: 650px;
-      margin: auto; } }
+      margin: auto; }
+      .help-friend__my-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: 600px;
+        margin: auto; }
+        .help-friend__my-links .btn {
+          width: 180px; } }
 @media (min-width: 992px) {
       .page-header__inner {
         display: -webkit-box;
@@ -1171,6 +1189,8 @@ input:checked ~ .field-checkbox__name-text:after {
     .list-property__inner {
       width: 870px;
       margin: auto; }
+      .list-property__content {
+        max-width: 100%; }
       .list-property__title {
         margin-bottom: 60px;
         font-size: 32px; }
@@ -1266,15 +1286,7 @@ input:checked ~ .field-checkbox__name-text:after {
         margin: 55px 0 50px;
         font-size: 32px; }
       .help-friend__my-links {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
+        max-width: 100%; }
         .help-friend__my-links .btn {
           width: 270px; }
     .social-links {
@@ -1309,7 +1321,7 @@ input:checked ~ .field-checkbox__name-text:after {
       .page-header:before {
         bottom: auto;
         height: 400px;
-        background: #64779A url(../img/page-header-bg.jpg) left center no-repeat;
+        background: #64779a url(../img/page-header-bg.jpg) left center no-repeat;
         background-size: cover; }
       .page-header__inner {
         width: 1266px; }
@@ -1348,7 +1360,6 @@ input:checked ~ .field-checkbox__name-text:after {
         bottom: 0;
         left: 0;
         z-index: 100;
-        display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
