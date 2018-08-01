@@ -22,14 +22,16 @@
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="page-header__inner"><span class="logo"><img src="img/logo.png" alt="Greece.ru" width="32" height="43"/></span>
-          <h1 class="page-header__title">Market your property online with Greece.Ru</h1>
-          <nav class="main-nav" id="nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link" href="/">Sell</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="/">Rent</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="/">Rent for vacation</a></li>
-            </ul>
-          </nav>
+          <div class="page-header__text-wrap">
+            <h1 class="page-header__title">Market your property online with Greece.Ru</h1>
+            <nav class="main-nav" id="nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Sell</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Rent</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="/">Rent for vacation</a></li>
+              </ul>
+            </nav>
+          </div>
           <div class="page-header__info">
             <ul class="page-header__features">
               <li class="page-header__features-item">
@@ -67,35 +69,37 @@
         <div class="embed-responsive about__video"><iframe src="https://www.youtube.com/embed/2T7Wx1cUDoU" frameborder="0" allowfullscreen=""></iframe></div>
       </div>
       <div class="list-property" id="list-property">
-        <header class="list-property__header">
-          <h2 class="list-property__title">List your property FOR FREE<small>in 3 easy steps</small></h2>
-        </header>
-        <div class="list-property__content">
-          <div class="list-property__block">
-            <h3 class="list-property__subtitle list-property__subtitle--describe">
-              <svg width="15" height="15">
-                <use xlink:href="img/sprite-svg.svg#pencil"></use>
-              </svg><span>Describe</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.</p>
-          </div>
-          <div class="list-property__block">
-            <h3 class="list-property__subtitle list-property__subtitle--upload">
-              <svg width="20" height="20">
-                <use xlink:href="img/sprite-svg.svg#photo"></use>
-              </svg><span>Upload photos</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.</p>
-          </div>
-          <div class="list-property__block">
-            <h3 class="list-property__subtitle list-property__subtitle--locate">
-              <svg width="18" height="20">
-                <use xlink:href="img/sprite-svg.svg#location"></use>
-              </svg><span>Locate</span></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.</p>
+        <div class="list-property__inner">
+          <header class="list-property__header">
+            <h2 class="list-property__title">List your property FOR FREE<small>in 3 easy steps</small></h2>
+          </header>
+          <div class="list-property__content">
+            <div class="list-property__block list-property__block--describe">
+              <h3 class="list-property__subtitle">
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite-svg.svg#pencil"></use>
+                </svg><span>Describe</span></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.</p>
+            </div>
+            <div class="list-property__block list-property__block--right list-property__block--upload">
+              <h3 class="list-property__subtitle">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite-svg.svg#photo"></use>
+                </svg><span>Upload photos</span></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.</p>
+            </div>
+            <div class="list-property__block list-property__block--locate">
+              <h3 class="list-property__subtitle">
+                <svg width="18" height="20">
+                  <use xlink:href="img/sprite-svg.svg#location"></use>
+                </svg><span>Locate</span></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="join">
-        <h2 class="join__title"></h2><a href="url">List your property FOR FREE</a>
+        <h2 class="join__title"><a href="url">List your property FOR FREE</a></h2>
         <form class="form">
           <div class="field-select custom-select" placeholder="I’m a buyer"><span class="field-select__help-text">Please specify who you are</span><select class="field-select__select" name="type" id="type"><option value="buyer" checked="checked">I’m a buyer</option><option value="seller">I’m a seller</option></select></div>
           <label class="field-text  field-text--error"><span class="field-text__help-text">Please enter your name</span><span class="field-text__input-wrap"><input class="field-text__input" type="text" name="name" placeholder="Your Name" required="required"/></span></label>
@@ -115,22 +119,24 @@
         </form>
       </div>
       <div class="help-friend">
-        <h2 class="help-friend__title">Do you have a friend who is selling or renting out his property?<small>Help him by recommending our service</small></h2>
-        <div class="help-friend__send">
-          <a class="help-friend__send-link help-friend__send-link--msg" href="url">
-            <svg width="36" height="36">
-              <use xlink:href="img/sprite-svg.svg#messenger"></use>
-            </svg><span>Send in messenger</span></a>
-          <a class="help-friend__send-link" href="url">
-            <svg width="36" height="36">
-              <use xlink:href="img/sprite-svg.svg#mail"></use>
-            </svg><span>Send in mail</span></a>
+        <div class="help-friend__inner">
+          <h2 class="help-friend__title">Do you have a friend who is selling or renting out his property?<small>Help him by recommending our service</small></h2>
+          <div class="help-friend__send">
+            <a class="help-friend__send-link help-friend__send-link--msg" href="url">
+              <svg width="36" height="36">
+                <use xlink:href="img/sprite-svg.svg#messenger"></use>
+              </svg><span>Send in messenger</span></a>
+            <a class="help-friend__send-link" href="url">
+              <svg width="36" height="36">
+                <use xlink:href="img/sprite-svg.svg#mail"></use>
+              </svg><span>Send in mail</span></a>
+          </div>
+          <div class="or help-friend__or">
+            <div class="or__inner">or</div>
+          </div>
+          <h3 class="help-friend__subtitle">Browse our properties</h3>
+          <p class="help-friend__my-links"><a class="btn  btn--sq" href="url">For sale</a><a class="btn  btn--sq" href="url">For vacation rental</a><a class="btn  btn--sq" href="url">For long term</a></p>
         </div>
-        <div class="or help-friend__or">
-          <div class="or__inner">or</div>
-        </div>
-        <h3 class="help-friend__subtitle">Browse our properties</h3>
-        <p class="help-friend__my-links"><a class="btn  btn--sq" href="url">For sale</a><a class="btn  btn--sq" href="url">For vacation rental</a><a class="btn  btn--sq" href="url">For long term</a></p>
       </div>
     </div>
     <div class="page__footer-wrapper">
@@ -163,7 +169,7 @@
                 </svg><span class="social-links__text">Google plus</span></a>
             </li>
           </ul>
-          <p class="page-footer__copyright">© Copyright 2017 Greece.ru <br/> Real estate agency with the best properties. Become part of our community.</p>
+          <p class="page-footer__copyright">© Copyright 2018 Greece.ru <br/> Real estate agency with the best properties. Become part of our community.</p>
         </div>
       </footer>
     </div>
