@@ -7,4 +7,81 @@
   $block-name:                &; // #{$block-name}__element
 
   display: none;
+
+  @media (min-width: $screen-xl) {
+    position: relative;
+    display: block;
+    width: 900px;
+    margin: auto;
+    padding: 50px 25px 25px;
+    color: $text-color;
+    font-size: $font-size + 3;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font-size: $font-size--h1 + 11;
+    font-weight: 400;
+  }
+
+  &__more {
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    border: none;
+    padding: 5px 40px;
+    background: none;
+    font-size: $font-size + 3;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      width: 9px;
+      height: 9px;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid $text-color;
+      border-bottom: 2px solid $text-color;
+      transform: rotate(45deg);
+      transition: all 0.3s;
+    }
+
+    &--open {
+
+      &:before {
+        transform: rotate(-135deg) translateY(-50%);
+      }
+    }
+  }
+
+  .js &__text {
+    position: relative;
+    max-height: 78px;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 55px;
+      background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      transition: opacity 0.3s;
+    }
+
+    &--open {
+      max-height: 900px;
+
+      &:before {
+        height: 0;
+        opacity: 0;
+      }
+    }
+  }
 }

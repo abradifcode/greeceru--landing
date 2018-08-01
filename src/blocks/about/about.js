@@ -1,19 +1,3 @@
-// Демо событий модальных окон
-$(document).ready(function(){
-  $('#modal-demo-01').on('show.nth.modal', function(){
-    console.log('Модальное окно #modal-demo-01: сработало событие show.nth.modal');
-  });
-  $('#modal-demo-01').on('shown.nth.modal', function(){
-    console.log('Модальное окно #modal-demo-01: сработало событие shown.nth.modal');
-  });
-  $('#modal-demo-01').on('hide.nth.modal', function(){
-    console.log('Модальное окно #modal-demo-01: сработало событие hide.nth.modal');
-  });
-  $('#modal-demo-01').on('hidden.nth.modal', function(){
-    console.log('Модальное окно #modal-demo-01: сработало событие hidden.nth.modal');
-  });
-});
-
 /* ========================================================================
  * Основано на Bootstrap: modal.js v3.3.7
  * Изменения минимальны: имена классов, событий, методов...
@@ -33,8 +17,8 @@ $(document).ready(function(){
     this.options             = options
     this.$body               = $(document.body)
     this.$element            = $(element)
-    // this.$dialog             = this.$element.find('.modal-dialog')
-    this.$dialog             = this.$element.find('.modal__dialog')
+    // this.$dialog             = this.$element.find('.about-dialog')
+    this.$dialog             = this.$element.find('.about__dialog')
     this.$backdrop           = null
     this.isShown             = null
     this.originalBodyPad     = null
@@ -43,8 +27,8 @@ $(document).ready(function(){
 
     // if (this.options.remote) {
     //   this.$element
-    //     // .find('.modal-content')
-    //     .find('.modal__content')
+    //     // .find('.about-content')
+    //     .find('.about__content')
     //     .load(this.options.remote, $.proxy(function () {
     //       // this.$element.trigger('loaded.bs.modal')
     //       this.$element.trigger('loaded.nth.modal')
@@ -80,8 +64,8 @@ $(document).ready(function(){
 
     this.checkScrollbar()
     this.setScrollbar()
-    // this.$body.addClass('modal-open')
-    this.$body.addClass('js-modal-open')
+    // this.$body.addClass('about-open')
+    this.$body.addClass('js-about-open')
 
     this.escape()
     this.resize()
@@ -115,7 +99,7 @@ $(document).ready(function(){
         that.$element[0].offsetWidth // force reflow
       // }
 
-      that.$element.addClass('modal--open')
+      that.$element.addClass('about--open')
 
       that.enforceFocus()
 
@@ -151,7 +135,7 @@ $(document).ready(function(){
     $(document).off('focusin.nth.modal')
 
     this.$element
-      .removeClass('modal--open')
+      .removeClass('about--open')
       // .off('click.dismiss.bs.modal')
       .off('click.dismiss.nth.modal')
       // .off('mouseup.dismiss.bs.modal')
@@ -207,7 +191,7 @@ $(document).ready(function(){
     var that = this
     this.$element.hide()
     this.backdrop(function () {
-      that.$body.removeClass('js-modal-open')
+      that.$body.removeClass('js-about-open')
       that.resetAdjustments()
       that.resetScrollbar()
       // that.$element.trigger('hidden.bs.modal')
@@ -228,8 +212,8 @@ $(document).ready(function(){
       // var doAnimate = $.support.transition && animate
 
       this.$backdrop = $(document.createElement('div'))
-        // .addClass('modal-backdrop ' + animate)
-        .addClass('modal__backdrop ')
+        // .addClass('about-backdrop ' + animate)
+        .addClass('about__backdrop ')
         .appendTo(this.$body)
 
       // this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
@@ -246,7 +230,7 @@ $(document).ready(function(){
 
       // if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
 
-      // this.$backdrop.addClass('modal__backdrop--shown')
+      // this.$backdrop.addClass('about__backdrop--shown')
 
       if (!callback) return
 
@@ -257,7 +241,7 @@ $(document).ready(function(){
         callback()
 
     } else if (!this.isShown && this.$backdrop) {
-      this.$backdrop.removeClass('modal--open')
+      this.$backdrop.removeClass('about--open')
 
       var callbackRemove = function () {
         that.removeBackdrop()
@@ -318,7 +302,7 @@ $(document).ready(function(){
 
   Modal.prototype.measureScrollbar = function () { // thx walsh
     var scrollDiv = document.createElement('div')
-    scrollDiv.className = 'modal-scrollbar-measure'
+    scrollDiv.className = 'about-scrollbar-measure'
     scrollDiv.style.overflow="scroll"; // nicothin: Отчего-то результатом подсчета всегда был 0 :(
     this.$body.append(scrollDiv)
     var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth

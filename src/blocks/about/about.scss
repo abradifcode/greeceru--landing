@@ -6,12 +6,83 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  display: block !important;
   padding: 30px 25px;
 
   @media (min-width: $screen-lg) {
     width: 950px;
     margin: auto;
     padding: 42px 0 70px;
+  }
+
+  @media (min-width: $screen-xl) {
+    display: none !important;
+
+    .js-about-open & {
+      display: flex !important;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      padding: 0;
+    }
+  }
+
+  &__dialog {
+
+    @media (min-width: $screen-xl) {
+
+      .js-about-open & {
+        position: relative;
+        width: 1146px;
+        margin: auto;
+        padding: 0;
+      }
+    }
+  }
+
+  &__close {
+    display: none;
+
+    @media (min-width: $screen-xl) {
+
+      .js-about-open & {
+        display: block;
+        position: absolute;
+        top: -55px;
+        right: -55px;
+        border: 3px solid #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: none;
+        padding: 0;
+        font: 0/0 a;
+        color: transparent;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          top: 21px;
+          left: 50%;
+          height: 3px;
+          width: 33px;
+          background: #fff;
+          transform: translateX(-50%) rotate(45deg);
+        }
+
+        &:after {
+          transform: translateX(-50%) rotate(-45deg);
+        }
+      }
+    }
   }
 
   &__title {
@@ -23,9 +94,40 @@
       font-size: $font-size--h1 + 11;
       margin-bottom: 30px;
     }
+
+    @media (min-width: $screen-xl) {
+
+      .js-about-open & {
+        display: none;
+      }
+    }
   }
 
   &__video {
     margin: 0;
+  }
+
+  &__backdrop {
+
+    @media (min-width: $screen-xl) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 99;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.js-about-open {
+
+  @media (max-width: ($screen-xl - 1)) {
+    padding-right: 0 !important;
+  }
+
+  @media (min-width: $screen-xl) {
+    overflow: hidden;
   }
 }

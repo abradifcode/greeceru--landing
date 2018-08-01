@@ -16,6 +16,13 @@
     padding-bottom: 50px;
   }
 
+  @media (min-width: $screen-xl) {
+    padding-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -24,8 +31,15 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: #64779A url(../img/page-header-bg--mobile.jpg) left center no-repeat;
+    background: #64779a url(../img/page-header-bg--mobile.jpg) left center no-repeat;
     background-size: cover;
+
+    @media (min-width: $screen-xl) {
+      bottom: auto;
+      height: 400px;
+      background: #64779a url(../img/page-header-bg.jpg) left center no-repeat;
+      background-size: cover;
+    }
   }
 
   &__inner {
@@ -47,6 +61,10 @@
       flex-wrap: wrap;
       width: 900px;
     }
+
+    @media (min-width: $screen-xl) {
+      width: 1266px;
+    }
   }
 
   &__text-wrap {
@@ -60,6 +78,7 @@
 
     @media (min-width: $screen-sm) {
       display: flex;
+      align-items: flex-start;
 
       &:before {
         content: '';
@@ -78,6 +97,18 @@
         margin-top: 20px;
         margin-right: 50px;
         background: url(../img/map.png) center no-repeat;
+        background-size: 100% auto;
+      }
+    }
+
+    @media (min-width: $screen-xl) {
+
+      &:before {
+        width: 511px;
+        height: 512px;
+        margin-top: -116px;
+        margin-right: 151px;
+        margin-left: 83px;
         background-size: 100% auto;
       }
     }
@@ -119,6 +150,11 @@
       border-radius: $border-radius + 1;
       font-size: $font-size--h3 + 4;
     }
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 8px;
+      box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+    }
   }
 
   &__features-item {
@@ -127,7 +163,7 @@
     padding-bottom: 16px;
 
     @media (min-width: $screen-lg) {
-      padding-left: 35px;
+      padding-left: 45px;
       padding-bottom: 30px;
     }
 
@@ -138,9 +174,10 @@
       fill: $color-main--darken;
 
       @media (min-width: $screen-lg) {
-        top: 5px;
-        width: 18px;
-        height: 14px;
+        top: 4px;
+        left: 5px;
+        width: 22px;
+        height: 17px;
       }
     }
 
@@ -167,6 +204,10 @@
       font-size: $font-size--small + 4;
     }
 
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -180,5 +221,11 @@
 
   &__watch-video.btn {
     display: none;
+
+    @media (min-width: $screen-xl) {
+      display: block;
+      width: 100%;
+      margin-top: 18px;
+    }
   }
 }
