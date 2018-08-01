@@ -18,25 +18,26 @@ mixin list-property(mods)
     }
 
   .list-property(class=allMods, id='list-property')&attributes(attributes)
-    header.list-property__header
-      h2.list-property__title List your property FOR FREE
-        small in 3 easy steps
-    .list-property__content
-      .list-property__block
-        h3.list-property__subtitle.list-property__subtitle--describe
-          svg(width='15', height='15')
-            use(xlink:href='img/sprite-svg.svg#pencil')
-          span Describe
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.
-      .list-property__block
-        h3.list-property__subtitle.list-property__subtitle--upload
-          svg(width='20', height='20')
-            use(xlink:href='img/sprite-svg.svg#photo')
-          span Upload photos
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.
-      .list-property__block
-        h3.list-property__subtitle.list-property__subtitle--locate
-          svg(width='18', height='20')
-            use(xlink:href='img/sprite-svg.svg#location')
-          span Locate
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.
+    .list-property__inner
+      header.list-property__header
+        h2.list-property__title List your property FOR FREE
+          small in 3 easy steps
+      .list-property__content
+        .list-property__block.list-property__block--describe
+          h3.list-property__subtitle
+            svg(width='15', height='15')
+              use(xlink:href='img/sprite-svg.svg#pencil')
+            span Describe
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.
+        .list-property__block.list-property__block--right.list-property__block--upload
+          h3.list-property__subtitle
+            svg(width='20', height='20')
+              use(xlink:href='img/sprite-svg.svg#photo')
+            span Upload photos
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.
+        .list-property__block.list-property__block--locate
+          h3.list-property__subtitle
+            svg(width='18', height='20')
+              use(xlink:href='img/sprite-svg.svg#location')
+            span Locate
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, odio.

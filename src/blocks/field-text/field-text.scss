@@ -10,6 +10,10 @@
   display: block;
   padding-top: 32px;
 
+  @media (min-width: $screen-lg) {
+    padding-top: 56px;
+  }
+
   &__input-wrap {
     display: block;
   }
@@ -29,6 +33,11 @@
     border-radius: $border-radius;
     appearance: textfield;
     transition: all 0.2s;
+
+    @media (min-width: $screen-lg) {
+      border-width: 2px;
+      padding: $field-padding-vertical + 10 $field-padding-horizontal + 15;
+    }
 
     &:valid {
       background-color: #fff;
@@ -84,5 +93,10 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @media (min-width: $screen-lg) {
+      top: 18px;
+      font-size: $font-size + 2;
+    }
   }
 }

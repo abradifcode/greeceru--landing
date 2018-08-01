@@ -6,12 +6,26 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  max-width: 650px;
+  margin: auto;
   padding: 25px 25px 30px;
+
+  @media (min-width: $screen-lg) {
+    padding-top: 60px;
+    padding-bottom: 68px;
+    font-size: $font-size--h2;
+  }
 
   &__title {
     margin: 6px 0 36px;
     color: $link-color;
     text-align: center;
+
+    @media (min-width: $screen-lg) {
+      margin-top: 0;
+      margin-bottom: 65px;
+      font-size: $font-size--h1 + 11;
+    }
 
     a {
       text-decoration: none;

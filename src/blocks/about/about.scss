@@ -8,10 +8,21 @@
 
   padding: 30px 25px;
 
+  @media (min-width: $screen-lg) {
+    width: 950px;
+    margin: auto;
+    padding: 42px 0 70px;
+  }
+
   &__title {
-    margin: 0 0 10px;
+    margin: 0 0 20px;
     text-align: center;
     font-size: $font-size--h1;
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-size--h1 + 11;
+      margin-bottom: 30px;
+    }
   }
 
   &__video {

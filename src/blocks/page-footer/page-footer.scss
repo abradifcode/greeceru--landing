@@ -11,26 +11,59 @@
   color: #fff;
   text-align: center;
 
+  @media (min-width: $screen-lg) {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+
+  &__inner {
+
+    @media (min-width: $screen-lg) {
+      width: 650px;
+      margin: auto;
+    }
+  }
+
   &__title {
     margin: 5px 0 20px;
     font-size: $font-size--h1;
+
+    @media (min-width: $screen-lg) {
+      margin-top: 0;
+      margin-bottom: 35px;
+      font-size: $font-size--h1 + 11;
+    }
 
     small {
       display: block;
       margin-top: 10px;
       font-weight: 400;
       font-size: $font-size--h3;
+
+      @media (min-width: $screen-lg) {
+        margin-top: 20px;
+        font-size: $font-size--h1 - 1;
+      }
     }
   }
 
   &__btn {
     display: block;
     width: 100%;
+
+    @media (min-width: $screen-lg) {
+      display: inline-block;
+      width: auto;
+    }
   }
 
   &__copyright {
     margin: 0;
     font-size: $font-size--small;
     opacity: 0.7;
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-size--small + 3;
+    }
   }
 }

@@ -13,6 +13,7 @@
 
   @media (min-width: $screen-sm) {
     padding-top: 35px;
+    padding-bottom: 50px;
   }
 
   &:before {
@@ -31,12 +32,27 @@
     position: relative;
 
     @media (min-width: $screen-sm) {
+      width: 490px;
+      margin: auto;
 
       .logo {
         position: absolute;
         top: 10px;
         left: 0;
       }
+    }
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 900px;
+    }
+  }
+
+  &__text-wrap {
+
+    @media (min-width: $screen-lg) {
+      margin-left: auto;
     }
   }
 
@@ -53,6 +69,18 @@
         background: url(../img/map--mobile.png) center no-repeat;
       }
     }
+
+    @media (min-width: $screen-lg) {
+
+      &:before {
+        width: 325px;
+        height: 325px;
+        margin-top: 20px;
+        margin-right: 50px;
+        background: url(../img/map.png) center no-repeat;
+        background-size: 100% auto;
+      }
+    }
   }
 
   &__title {
@@ -63,10 +91,15 @@
     @media (min-width: $screen-sm) {
       padding-left: 55px;
     }
+
+    @media (min-width: $screen-lg) {
+      padding-bottom: 40px;
+      font-size: $font-size--h1 + 11;
+    }
   }
 
   &__features {
-    max-width: 210px;
+    width: 210px;
     margin: 0 auto;
     padding: 25px 20px 15px;
     list-style: none;
@@ -79,6 +112,13 @@
     @media (min-width: $screen-sm) {
       margin-right: 0;
     }
+
+    @media (min-width: $screen-lg) {
+      width: 343px;
+      padding: 35px 30px 25px;
+      border-radius: $border-radius + 1;
+      font-size: $font-size--h3 + 4;
+    }
   }
 
   &__features-item {
@@ -86,11 +126,22 @@
     padding-left: 20px;
     padding-bottom: 16px;
 
+    @media (min-width: $screen-lg) {
+      padding-left: 35px;
+      padding-bottom: 30px;
+    }
+
     svg {
       position: absolute;
       top: 4px;
       left: 0;
       fill: $color-main--darken;
+
+      @media (min-width: $screen-lg) {
+        top: 5px;
+        width: 18px;
+        height: 14px;
+      }
     }
 
     a {
@@ -110,6 +161,11 @@
     text-align: center;
     font-size: $font-size--small;
     opacity: 0.8;
+
+    @media (min-width: $screen-lg) {
+      padding-top: 20px;
+      font-size: $font-size--small + 4;
+    }
 
     &:before {
       content: '';

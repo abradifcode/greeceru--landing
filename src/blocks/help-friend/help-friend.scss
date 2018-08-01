@@ -12,15 +12,39 @@
   background: $gray-lightest;
   text-align: center;
 
+  @media (min-width: $screen-lg) {
+    padding-top: 56px;
+    padding-bottom: 48px;
+  }
+
+  &__inner {
+
+    @media (min-width: $screen-lg) {
+      max-width: 1060px;
+      margin: auto;
+    }
+  }
+
   &__title {
     margin: 0 0 20px;
     font-size: $font-size--h1;
+
+    @media (min-width: $screen-lg) {
+      margin-top: 0;
+      margin-bottom: 55px;
+      font-size: $font-size--h1 + 11;
+    }
 
     small {
       display: block;
       padding-top: 10px;
       font-size: $font-size--h2;
       font-weight: 400;
+
+      @media (min-width: $screen-lg) {
+        margin-top: 20px;
+        font-size: $font-size--h1 + 3;
+      }
     }
   }
 
@@ -40,6 +64,13 @@
     text-decoration: none;
     font-size: $font-size--h3;
 
+    @media (min-width: $screen-lg) {
+      width: 300px;
+      padding-top: 130px;
+      margin-bottom: 56px;
+      font-size: $font-size--h3 + 6;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -51,6 +82,11 @@
       background: #fff;
       transform: translateX(-50%);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+      @media (min-width: $screen-lg) {
+        width: 110px;
+        height: 110px;
+      }
     }
 
     svg {
@@ -59,6 +95,12 @@
       left: 50%;
       transform: translateX(-50%);
       fill: $color-main--dark;
+
+      @media (min-width: $screen-lg) {
+        top: 26px;
+        width: 56px;
+        height: 56px;
+      }
     }
 
     &--msg {
@@ -81,16 +123,35 @@
   &__subtitle {
     margin: 12px 0 28px;
     font-size: $font-size--h1;
+
+    @media (min-width: $screen-lg) {
+      margin: 55px 0 50px;
+      font-size: $font-size--h1 + 11;
+    }
   }
 
   &__my-links {
     margin: 0;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
 
     .btn {
       display: block;
 
       &:not(:last-child) {
         margin-bottom: 14px;
+      }
+
+      @media (min-width: $screen-lg) {
+        width: 270px;
+      }
+
+      @media (min-width: $screen-xl) {
+        width: 300px;
       }
     }
   }

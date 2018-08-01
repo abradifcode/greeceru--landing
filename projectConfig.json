@@ -15,9 +15,7 @@
       "--error"
     ],
     "field-checkbox": [],
-    "field-select": [
-      "--error"
-    ],
+    "field-select": [],
     "form": [],
     "modal": [],
     "trusted": [],

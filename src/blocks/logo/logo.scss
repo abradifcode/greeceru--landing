@@ -11,5 +11,10 @@
 
   img {
     display: block;
+
+    @media (min-width: $screen-lg) {
+      width: 57px;
+      height: 76px;
+    }
   }
 }

@@ -18,20 +18,21 @@ mixin help-friend(mods)
     }
 
   .help-friend(class=allMods)&attributes(attributes)
-    h2.help-friend__title Do you have a friend who is selling or renting out his property?
-      small Help him by recommending our service
-    .help-friend__send
-      a.help-friend__send-link.help-friend__send-link--msg(href='url')
-        svg(width='36', height='36')
-          use(xlink:href='img/sprite-svg.svg#messenger')
-        span Send in messenger
-      a.help-friend__send-link(href='url')
-        svg(width='36', height='36')
-          use(xlink:href='img/sprite-svg.svg#mail')
-        span Send in mail
-    +or('or')(class='help-friend__or')
-    h3.help-friend__subtitle Browse our properties
-    p.help-friend__my-links
-      +btn('For sale', 'sq')(href='url')
-      +btn('For vacation rental', 'sq')(href='url')
-      +btn('For long term', 'sq')(href='url')
+    .help-friend__inner
+      h2.help-friend__title Do you have a friend who is selling or renting out his property?
+        small Help him by recommending our service
+      .help-friend__send
+        a.help-friend__send-link.help-friend__send-link--msg(href='url')
+          svg(width='36', height='36')
+            use(xlink:href='img/sprite-svg.svg#messenger')
+          span Send in messenger
+        a.help-friend__send-link(href='url')
+          svg(width='36', height='36')
+            use(xlink:href='img/sprite-svg.svg#mail')
+          span Send in mail
+      +or('or')(class='help-friend__or')
+      h3.help-friend__subtitle Browse our properties
+      p.help-friend__my-links
+        +btn('For sale', 'sq')(href='url')
+        +btn('For vacation rental', 'sq')(href='url')
+        +btn('For long term', 'sq')(href='url')
