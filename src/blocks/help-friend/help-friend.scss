@@ -137,10 +137,16 @@
   &__my-links {
     margin: 0;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-md) {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    @media (min-width: $screen-lg) {
+      max-width: 100%;
     }
 
     .btn {
@@ -148,6 +154,10 @@
 
       &:not(:last-child) {
         margin-bottom: 14px;
+      }
+
+      @media (min-width: $screen-md) {
+        width: 180px;
       }
 
       @media (min-width: $screen-lg) {

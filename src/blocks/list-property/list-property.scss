@@ -27,6 +27,15 @@
 
   &__header {}
 
+  &__content {
+    max-width: 600px;
+    margin: auto;
+
+    @media (min-width: $screen-lg) {
+      max-width: 100%;
+    }
+  }
+
   &__title {
     display: inline-block;
     margin: 7px 0 30px;

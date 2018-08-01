@@ -114,6 +114,13 @@
     }
   }
 
+  &__info-text {
+
+    @media (min-width: $screen-sm) {
+      margin-left: auto;
+    }
+  }
+
   &__title {
     margin: 0;
     padding: 20px 0 14px;
@@ -139,10 +146,6 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     color: $text-color;
     text-align: left;
-
-    @media (min-width: $screen-sm) {
-      margin-right: 0;
-    }
 
     @media (min-width: $screen-lg) {
       width: 343px;

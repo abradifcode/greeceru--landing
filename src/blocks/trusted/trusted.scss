@@ -33,12 +33,13 @@
     background: none;
     font-size: $font-size + 3;
     font-weight: 700;
+    line-height: 1;
     cursor: pointer;
 
     &:before {
       content: '';
       position: absolute;
-      top: 7px;
+      top: 6px;
       right: 10px;
       width: 9px;
       height: 9px;
