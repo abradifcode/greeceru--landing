@@ -247,7 +247,7 @@ pre {
        tab-size: 2; }
 .page-header {
   position: relative;
-  padding: 50px 25px 35px;
+  padding: 50px 5px 35px;
   text-align: center;
   color: #fff; }
 .page-header:before {
@@ -346,7 +346,7 @@ pre {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 16px; }
+    font-size: 13px; }
 .main-nav__item {
     position: relative;
     padding: 0 10px 0 15px; }
@@ -1027,8 +1027,7 @@ input:checked ~ .field-checkbox__name-text:after {
  */
 @media (min-width: 540px) {
     .page-header {
-      padding-top: 35px;
-      padding-bottom: 50px; }
+      padding-top: 35px 25px 50px; }
       .page-header__inner {
         width: 490px;
         margin: auto; }
@@ -1056,6 +1055,8 @@ input:checked ~ .field-checkbox__name-text:after {
     .main-nav {
       padding-left: 55px;
       margin-bottom: 45px; }
+      .main-nav__list {
+        font-size: 16px; }
       .social-links__link {
         width: 66px;
         height: 66px; }
