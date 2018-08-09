@@ -22,7 +22,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: $font-size--h3;
+    font-size: $font-size;
+
+    @media (min-width: $screen-sm) {
+      font-size: $font-size--h3;
+    }
 
     @media (min-width: $screen-lg) {
       font-size: $font-size--h3 + 10;

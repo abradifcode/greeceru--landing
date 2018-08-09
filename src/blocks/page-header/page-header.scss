@@ -7,13 +7,12 @@
   $block-name:                &; // #{$block-name}__element
 
   position: relative;
-  padding: 50px 25px 35px;
+  padding: 50px 5px 35px;
   text-align: center;
   color: #fff;
 
   @media (min-width: $screen-sm) {
-    padding-top: 35px;
-    padding-bottom: 50px;
+    padding-top: 35px 25px 50px;
   }
 
   @media (min-width: $screen-xl) {
